@@ -12,8 +12,6 @@ export const Reviews = () => {
     getMovieReviews(movieId).then(setReviews);
   }, [movieId]);
 
-  console.log(reviews);
-
   if (!reviews) {
     return;
   }
